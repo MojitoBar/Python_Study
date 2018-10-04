@@ -13,3 +13,12 @@ def substract(a, b):
 
 # 함수 호출
 print(substract(4, 8))
+# 키워드 인수(매개변수)
+print(substract(b=4, a=8))
+
+a = 10
+b = True
+c = "김치"
+print(type(a))
+print(type(b))
+print(type(c))
