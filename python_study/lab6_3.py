@@ -45,11 +45,18 @@ class Fraction:
 # half = Fraction(1, 2)
 # half.print()
 
-f1 = Fraction(2, 7)
+f1 = Fraction(1, 2)
 f1.print()
 
-f2 = Fraction(1, 8)
+f2 = Fraction(5, 4)
 f2.print()
 
 # f1과 f2를 더한 결과를 출력
-f1.add(f2).print()
+f3 = f1.add(f2)
+
+for i in range(2, f3.denom):
+    if(f3.denom % i == 0 and f3.numer % i == 0):
+        f3.denom = int(f3.denom / i)
+        f3.numer = int(f3.numer / i)
+        
+f3.print()
