@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 챕터: day6
 주제: class
@@ -19,7 +20,7 @@ class Fraction:
         self.numer = n
         self.denom = d
 
-    def print(self):
+    def printf(self):
         print("%d/%d" %(self.numer, self.denom))
 
     # 분자를 반환하는 메쏘드 getNumer 정의
@@ -46,10 +47,10 @@ class Fraction:
 # half.print()
 
 f1 = Fraction(1, 2)
-f1.print()
+f1.printf()
 
 f2 = Fraction(5, 4)
-f2.print()
+f2.printf()
 
 # f1과 f2를 더한 결과를 출력
 f3 = f1.add(f2)
