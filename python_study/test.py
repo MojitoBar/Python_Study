@@ -119,7 +119,6 @@
 #             return False
 #         elif(i==n-1):
 #             return True
-#
 # print(is_prime())
 
 # def sum_digit(n):
@@ -144,8 +143,8 @@
 # str = ""
 # for i in list:
 #     str = str + i;
-# print("입력 받은 단어:" + a)
-# print("단어에 포함된 알파벳" + str)
+# print("입력 받은 단어: " + a)
+# print("단어에 포함된 알파벳: " + str)
 
 # M = int(input("M:"))
 # N = int(input("N:"))
@@ -163,10 +162,19 @@
 # print("합:" + str(sum))
 # print("최솟값" + str(min))
 
-def r_product(x, y):
-    if y > 1:
-        return x + r_product(x, y - 1)
-    else:
-        return x
+# def r_product(x, y):
+#     if y > 1:
+#         return x + r_product(x, y - 1)
+#     else:
+#         return x
+#
+# print(r_product(3, 4))
 
-print(r_product(3, 4))
+class a:
+    def aa(self):
+        print("a")
+class b(a):
+    def bb(self):
+        print("b")
+
+x = b().aa()
