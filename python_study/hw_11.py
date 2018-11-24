@@ -99,7 +99,7 @@ class Fraction:
 f1 = Fraction(-4, 5)
 f2 = Fraction(3, 2)
 
-print(f1.__mul__(f2))
+print(f1*(f2))
 
 # case2
 f3 = Fraction(8, 31)
